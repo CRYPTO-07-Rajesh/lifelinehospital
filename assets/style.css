@@ -1,0 +1,1915 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+button {
+  border: none;
+  background-color: white;
+}
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 1px 3px 8px #0091f871;
+}
+.homesection {
+  width: 100%;
+  background-color: #008ff8;
+  height: 45px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.nav-add {
+  width: 1435px;
+  display: flex;
+}
+.nav-address {
+  display: flex;
+  justify-items: center;
+  height: 45px;
+  width: 58%;
+  justify-content: space-between;
+}
+.mail {
+  display: flex;
+
+  width: 42%;
+}
+
+.name {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mail-subcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+
+.mail-subcontainer2 {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.mail-id {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.mail-id a {
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 109px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.navbar-container {
+  width: 1435px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.logo {
+  width: 27%;
+  padding-top: 14px;
+}
+.menu {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+}
+
+.sub-menu {
+  display: flex;
+  width: 100%;
+  height: 20px;
+}
+
+.menu-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+
+.menu-list li a {
+  color: #008ff8;
+  font-size: 18px;
+}
+
+.menu-list li #href:hover {
+  color: #8dc641;
+  stroke: #8dc641;
+}
+
+.about-hospital {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+
+
+.abouthospital-dropdownmeu:hover .about-hospital a{
+  color: #8dc641;
+}
+
+.abouthospital-dropdownmeu:hover .about-hospital {
+  color: #8dc641;
+  stroke: #8dc641;
+}
+
+.dropdpwnmenu {
+  background-color: white;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  color: #008ff8;
+  position: absolute;
+  box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  display: none;
+}
+
+.li-bg {
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  border-radius: 10%;
+  gap: 3px;
+  width: 98%;
+}
+
+.abouthospital-dropdownmeu:hover .dropdpwnmenu {
+  display: flex;
+}
+
+#column1 li {
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 95%;
+  padding-left: 12px;
+  border-radius: 10px;
+}
+#Management:hover {
+  background-color: #008ff8;
+  color: white;
+}
+
+#Certifications:hover {
+  background-color: #008ff8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#Management:hover a {
+  color: #ffffff;
+}
+
+#Certifications:hover a {
+  color: #ffffff;
+}
+.dropdpwnmenu2 {
+  background-color: white;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  color: #008ff8;
+  position: absolute;
+  z-index: 998;
+  box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  display: none;
+}
+
+.abouthospital-dropdownmeu:hover .dropdpwnmenu2 {
+  display: flex;
+}
+
+.Appointment-main {
+  width: 19%;
+  display: flex;
+  justify-content: end;
+}
+
+.Appointment {
+  display: flex;
+
+  width: 85%;
+  height: 100%;
+  justify-content: end;
+}
+.Appointment-sub {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Appointment-logo {
+  width: 55%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #008ff8;
+  color: white;
+  border-radius: 10%;
+}
+.Appointment-logo a {
+  color: #008ff8;
+}
+.Appointment-logo:hover a {
+  color: white;
+}
+
+#profileBtn {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(255, 255, 255, 0.4); 
+    padding-top: 90px; 
+    border: none;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    border: 1px solid #88888880;
+    width: 535px;
+    height: 571px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Close Button */
+.close {
+    color:rgb(129, 129, 129);
+    float: right;
+    font-size: 35px;
+  
+    width: 50px;
+    height: 24px;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the login form */
+.login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container img.logo {
+    width: 214px;
+    height: 68px;
+
+    align-self: center;
+}
+
+.login-container h2 {
+    margin-top: 44px;
+    font-size:32px;
+    text-align: center;
+    line-height: 8px;
+}
+
+.login-container p{
+  font-size:18px;
+  font-weight: 400;
+
+}
+
+
+
+
+.login-container input[type="email"], 
+.login-container input[type="password"] {
+    width: 424px;
+    height: 45px;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 0.75px solid #171717;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+
+.login-container input[type="email"]{
+  margin-top: 35px;
+  }
+  
+
+.login-container .remember-me {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-size: 12px;
+}
+
+.login-container .remember-me input[type="checkbox"] {
+  margin-right: 5px; /* Move the checkbox to the right */
+  transform: scale(1.2); 
+}
+
+.login-btn {
+    width: 424px;
+    height: 45px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#donthave-acc{
+  font-size:12px;
+  font-weight: 400;
+}
+
+.forgot-password{
+  color: #008FF8;
+  font-size: 12px;
+}
+
+.login-btn:hover {
+    background-color:#8dc641;
+}
+
+.login-container .forgot-password {
+    display: block;
+  
+}
+
+.login-container p {
+    margin-top: 20px;
+}
+
+#donthave-acc a{
+  color: #008FF8;
+}
+
+
+.Appointment-logo:hover {
+  background-color: #008ff8;
+}
+
+.Appointment-avg:hover {
+  stroke: #8dc641;
+}
+
+@media (min-width: 1340px) and (max-width: 1470px) {
+  .nav-address {
+    width: 80%;
+  }
+
+  .mail-subcontainer2 {
+    width: 60%;
+  }
+  .nav-add {
+    width: 1250px;
+  }
+
+  .navbar-container {
+    width: 1250px;
+  }
+}
+
+@media (min-width: 1229px) and (max-width: 1340px) {
+
+  .nav-add {
+    width: 1100px;
+  }
+  .navbar-container {
+    width: 1000px;
+
+  }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1229px) {
+
+  .nav-add {
+    width: 1000px;
+  }
+  .navbar-container {
+    width: 1000px;
+    
+  }
+  html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+}
+
+/* .hero-main */
+
+.hero-main {
+  display: flex;
+  width: 100%;
+  height: 646px;
+  background-color: #d2ecff;
+  justify-content: center;
+  padding-top: 154px;
+}
+
+.hero-sub {
+  width: 1435px;
+  height: 100%;
+  display: flex;
+}
+.hero-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.hero-heading1 {
+  width: 76%;
+  height: 24%;
+
+  font-size: 64px;
+  margin-bottom: 3%;
+  line-height: 77px;
+  font-weight: 600;
+}
+.hero-parah {
+  width: 100%;
+  height: 14%;
+  padding-bottom: 60px;
+  font-size: 18px;
+}
+
+.hero-booking-btnmain {
+  width: 44%;
+  height: 7%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.hero-BookAppointment {
+  width: 181px;
+  height: 100%;
+  background-color: #008ff8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8%;
+}
+
+.hero-ContactUs {
+  width: 121px;
+  height: 100%;
+  border: 1px solid #008ff8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8%;
+}
+
+.hero-BookAppointment a {
+  color: white;
+}
+
+.hero-ContactUs a {
+  color: #008ff8;
+}
+
+.hero-BookAppointment:hover {
+  background-color: #8dc641;
+}
+
+.hero-ContactUs:hover {
+  background-color: #008ff8;
+}
+.hero-ContactUs:hover a {
+  color: white;
+}
+
+.hero-doctor {
+  height: 100%;
+  display: flex;
+  z-index: 4;
+  position: relative;
+}
+
+.doctor-logo {
+  min-width: 620px;
+  height: 100%;
+  background-image: url(./doctors-day-cute-young-handsome-man-lab-coat-glasses-smiling-holding-book-Photoroom\ 1.png);
+  z-index: 5;
+}
+
+.updown {
+  width: 321px;
+  height: 296px;
+  position: absolute;
+  display: flex;
+  align-items: end;
+  margin-top: 35%;
+  margin-left: 48%;
+  z-index: 6;
+}
+.updownsub {
+  width: 100%;
+  height: 40%;
+  background-color: white;
+  border-radius: 9px;
+  animation-name: infiniteupdown;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: all.3s;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: absolute;
+}
+
+@keyframes infiniteupdown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-180px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.doc-info {
+  display: flex;
+  width: 85%;
+  height: 76%;
+  padding: 18px 15px 12px 35px;
+}
+
+.doc-name {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: sp;
+}
+
+#doc-name-parah{
+  font-size:12px;
+  color: #8dc641;
+}
+
+.doc-img {
+  width: 31%;
+  height: 100%;
+  background-image: url(./Ellipse\ 5.png);
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.features1 {
+  width: 100%;
+  height: 700px;
+  background-color: blue;
+  position: ;
+}
+.hero-doctor {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+
+.shadow-effect {
+  height: 242px;
+  width: 254px;
+  position: absolute;
+  background-size: cover;
+  border: none;
+  margin-top: 10%;
+  margin-left: 70%;
+  border-radius: 50%;
+  filter: blur(80px);
+  background-color: #008FF8;
+}
+
+@media (min-width: 1000px) and (max-width: 1470px) {
+  .hero-sub {
+    width: 1250px;
+  }
+  .hero-heading1 {
+    font-size: 55px;
+  }
+  .hero-parah {
+    font-size: 16px;
+  }
+
+  .updown {
+    margin-top: 18%;
+    margin-left: 24%;
+  }
+}
+  @media (min-width: 1229px) and (max-width: 1350px) {
+    .hero-sub {
+      width: 1100px;
+    }
+    .hero-heading1 {
+      font-size: 50px;
+    }
+    .hero-parah {
+      font-size: 16px;
+    }
+  
+    .updown {
+      margin-top: 18%;
+      margin-left: 24%;
+    }
+    a{
+      font-size: 14px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1229px) {
+
+  .hero-sub {
+    width: 1000px;
+  }
+  .hero-heading1 {
+    font-size: 45px;
+  }
+  .hero-parah {
+    font-size: 16px;
+  }
+
+  .updown {
+    margin-top: 18%;
+    margin-left: 24%;
+  }
+  a{
+    font-size: 12px;
+  }
+}
+
+.about-us {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-sub {
+  height: 535px;
+  width: 1435px;
+  display: flex;
+  justify-content: center;
+}
+.aboutus-info {
+  width: 50%;
+  height: 100%;
+}
+
+.abouthospital-parah {
+  height: 76%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sub-parah-heading {
+  font-size: 64px;
+  font-weight: 500;
+  color: #171717;
+  line-height: 77.45px;
+  padding-bottom: 5%;
+}
+
+#sub-para {
+  color: #008ff8;
+  font-size: 18px;
+  font-weight: 600;
+}
+.sub-para {
+  font-size: 18px;
+}
+.aboutus-img {
+  background-image: url(./Rectangle\ 11.png);
+  border-radius: 8px;
+  background-size: cover;
+  flex: 1;
+}
+
+.abouthospital-experiance {
+  width: 61%;
+  height: 20%;
+  display: flex;
+}
+
+.YearsExperiences {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+}
+
+.value {
+  width: 85px;
+  height: 77px;
+  display: flex;
+  justify-content: end;
+  color: #8dc641;
+  font-size: 64px;
+  font-weight: 500;
+}
+.YearsExperiences-text {
+  color: #171717;
+  width: 157px;
+  height: 22px;
+  display: flex;
+  justify-content: start;
+}
+.value1 {
+  width: px;
+  height: 77px;
+  display: flex;
+  justify-content: end;
+  color: #8dc641;
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.HappyCustomers {
+  color: #171717;
+  width: 200px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+}
+.YearsExperiences-text1 {
+  color: #171717;
+  width: 157px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) and (max-width: 1470px) {
+  .aboutus-sub {
+    width: 1250px;
+  }
+
+  #sub-parah-heading {
+    font-size: 55px;
+  }
+
+  #sub-para {
+    font-size: 16px;
+  }
+  .sub-para {
+    font-size: 16px;
+  }
+}
+/* Lifeline Hospital Services */
+
+.hospitalservices {
+  width: 100%;
+  height: 1109px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2ecff;
+}
+
+.hospitalservices-sub {
+  height: 82.9%;
+  width: 1435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Services-heading {
+  height: 12.3%;
+  width: 53.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Services-column {
+  height: 81%;
+  width: 100%;
+}
+.Excellence-parah {
+  font-size: 18;
+  font-weight: 600;
+  color: #008ff8;
+}
+
+.Lifeline-headingmain {
+  width: 100%;
+  height: 69%;
+  font-size: 64px;
+  display: flex;
+  font-weight: 500;
+}
+.Lifeline-heading {
+  font-weight: 500;
+  margin-left: 2.5%;
+  color: #008ff8;
+}
+
+.Services-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2.9%;
+}
+
+.lifelineServices-grid {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3%;
+}
+
+.lifelineServicesgrid-sub {
+  width: 84.5%;
+  height: 79.6%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hr {
+  margin-bottom: 10%;
+}
+
+.lifelineServices-grid:hover .lifelineServicesgrid-sub .svg-rajesh {
+  background-color: #008ff8;
+  color: white;
+  fill: white;
+}
+
+.lifelineServices-grid:hover {
+  background-color: #008ff8;
+  color: white;
+}
+#Cardiology {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#Cardiology-sub {
+  font-size: 18px;
+}
+
+@media (min-width: 1000px) and (max-width: 1470px) {
+  .hospitalservices-sub {
+    width: 1250px;
+  }
+
+  .Lifeline-headingmain {
+    font-size: 55px;
+  }
+  .Excellence-parah {
+    font-size: 16px;
+  }
+
+  #Cardiology-sub {
+    font-size: 16px;
+  }
+  .Services-svg {
+    height: 76px;
+    width: 76px;
+  }
+}
+
+/* No-countingsection */
+
+.No-countingsection {
+  width: 100%;
+  height: 389px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.No-countingsection-sub {
+  height: 254px;
+  width: 1435px;
+  background-color: #008ff8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.counting-div {
+  width: 70.8%;
+  height: 50.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.Professional-Doctors {
+  width: 28.8%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Professional-Doctors2 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#border {
+  border-right: 1px solid white;
+}
+
+#content-center {
+  display: flex;
+  align-items: center;
+}
+#NUMBER- {
+  width: 56%;
+  height: 60.5%;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.Professional-Doctors1 {
+  height: 17.5%;
+  width: 62.5%;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.counter {
+  font-size: 64px;
+  font-weight: 500;
+  padding-right: 8px;
+}
+
+@media (min-width: 1000px) and (max-width: 1470px) {
+  .No-countingsection-sub {
+    width: 1250px;
+  }
+  .Professional-Doctors1 {
+    font-size: 16px;
+  }
+  .NUMBER-2 {
+    font-size: 55px;
+  }
+  .counter {
+    font-size: 55px;
+  }
+}
+
+/* .TeamDoctor-main */
+
+.TeamDoctor-main{
+  width: 100%;
+  height: 677px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Specialist {
+  height: 84.8%;
+  width: 1435px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.gap {
+  width: 1435px;
+  height: 15.5%;
+}
+
+.TeamDoctor-sub {
+  height: 19.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.doc-info2 {
+  height: 69%;
+  width: 100%;
+  display: flex;
+  gap: 42px;
+}
+
+.TeamDoctor-sub p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #008ff8;
+}
+
+.TeamDoctor-sub h2 {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.TeamDoctor-sub span {
+  color: #008ff8;
+}
+.Cardiology2 {
+  height: 100%;
+  width: 22.8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 8px 50px rgba(0, 0, 0, 0.171);
+}
+
+.Cardiology-sub {
+  height: 89.5%;
+  width: 79.6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.Cardiology-sub2 {
+  width: 100%;
+  height: 75%;
+  background-image: url(./Rectangle\ 14.png);
+  border-radius: 10px;
+}
+
+.Cardiology-sub p {
+  font-size: 18px;
+  color: #858585;
+  font-weight: 400;
+}
+.Cardiology-sub3 {
+  background-image: url(./Dr.Makrand.png);
+  width: 100%;
+  height: 75%;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.Cardiology-sub4 {
+  background-image: url(./Dr.Maria.png);
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.Cardiology-sub5 {
+  background-image: url(./ra\ Dr.Ulhas.png);
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+}
+
+@media (min-width: 1000px) and (max-width: 1470px) {
+  .Specialist {
+    width: 1250px;
+  }
+
+  .gap {
+    width: 1250px;
+  }
+
+  .doc-info2 {
+    gap: 35px;
+  }
+  .TeamDoctor-sub p {
+    font-size: 16px;
+  }
+  .TeamDoctor-sub h2 {
+    font-size: 55px;
+  }
+  .Cardiology-sub p {
+    font-size: 16px;
+  }
+}
+
+/* Our Testimonials */
+
+.OurTestimonialsmain {
+  width: 100%;
+  height: 634px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.WhatOurPatientsSay {
+  height: 96.2%;
+  width: 1435px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+.gap2 {
+  width: 1435px;
+  height: 12%;
+}
+
+.testimonial-heading {
+  height: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review {
+  height: 76%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.patients-reviewmain {
+  width: 100%;
+  height: 74.6%;
+  display: flex;
+  gap: 87px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  flex-wrap: wrap;
+}
+
+.patients-reviewmain::-webkit-scrollbar {
+  display: none;
+}
+
+.patients-review {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  gap: 87px;
+}
+
+.btn-backright {
+  width: 10.1%;
+  height: 12.5%;
+}
+
+.patients-reviewsub {
+  height: 100%;
+  width: 28.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.review-img {
+  width: 60%;
+  height: 25.8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-img h1 {
+  font-size: 84px;
+  color: #008ff8;
+}
+.review-details p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.review-details h2 {
+  font-weight: 500;
+}
+#reviewparah {
+  color: #858585;
+}
+.btn-backright {
+  display: flex;
+}
+
+.hoverffect button:hover #circle1 {
+  fill: #8dc641;
+}
+
+#divya-parah {
+  padding-bottom: 17px;
+}
+
+@media (min-width: 1000px) and (max-width: 1470px) {
+  .WhatOurPatientsSay {
+    width: 1250px;
+  }
+  .gap2 {
+    width: 1250px;
+  }
+
+  .patients-reviewmain {
+    gap: 75px;
+  }
+
+  .review-img h1 {
+    font-size: 70px;
+  }
+
+  .review-details p {
+    margin-bottom: 8px;
+    margin-top: px;
+    font-size: 16px;
+  }
+  #divya-parah {
+    padding-bottom: 29px;
+  }
+}
+
+/* Frequently asked Quations */
+
+.faq-main {
+  width: 100%;
+  height: 658px;
+  display: flex;
+  justify-content: center;
+}
+
+.faq {
+  height: 100%;
+  width: 1435px;
+  display: flex;
+  align-self: center;
+
+  justify-content: space-between;
+}
+
+.faq-sub {
+  width: 65.6%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.faq-img {
+  width: 29.9%;
+  height: 88.7%;
+  background-image: url(./docimage.jpg);
+}
+
+.FAQ-heading {
+  width: 69.3%;
+  height: 29.4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faq-quations {
+  width: 941px;
+  height: 360px;
+  z-index: 2;
+  position: absolute;
+  padding-top: 200px;
+}
+.FAQs-btn {
+  width: 14.6%;
+  height: 7%;
+  background-color: ;
+  border: 1px solid #008ff8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  z-index: 1;
+  position: relative;
+}
+
+.FAQ-heading p {
+  font-size: 18px;
+  color: #008ff8;
+  font-weight: 600;
+}
+
+.FAQ-heading h2 {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.FAQ-heading h2 span {
+  color: #008ff8;
+}
+#faq-parah {
+  color: black;
+  font-weight: 400;
+}
+
+.FAQs-btn a {
+  color: #008ff8;
+}
+
+.FAQs-btn:hover {
+  background-color: #008ff8;
+}
+.FAQs-btn:hover a {
+  color: white;
+}
+
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 22px;
+  width: 100%;
+  height: 90px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover {
+  background-color: #f1f7f5;
+}
+.pannel {
+  padding: 0 2rem 2.5rem 2rem;
+  background-color: white;
+  overflow: hidden;
+  background-color: #f1f7f5;
+  display: flex;
+  align-content: center;
+  display: none;
+  height: 128px;
+  border-top: 1px solid black;
+
+}
+.pannel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-left: 62px;
+}
+
+.faq.active {
+  border: none;
+}
+
+.faq2 {
+  border-bottom: 1px solid black;
+}
+
+#faq-heading {
+  margin-left: 95px;
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1470px) {
+  .faq{
+    width: 1250px;
+  }
+
+  .faq-quations {
+    width: 750px;
+    padding-top: 200px;
+  }
+  .FAQ-heading p {
+    font-size: 16px;
+
+  }
+  .FAQ-heading h2 {
+    font-size:55px;
+
+  }
+  .accordion {
+    font-size: 20px;
+
+  }
+
+}
+
+
+/* .ambulance-main */
+.ambulance-main{
+  width: 100%;
+  height: 472px;
+
+  margin-top: 75px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  background-color: #E2F3FF;
+}
+
+.ambulance-sub{
+  width: 1780px;
+  height: 400px;
+  display: flex;
+}
+
+.ambulance-img{
+  width:30.4%;
+height: 100%;
+background-size: cover;
+z-index: 1;
+}
+
+.amulance-heading{
+  width:73.7%;
+  height: 100%;
+  font-family: "Kaushan Script,cursive";
+  display: flex;
+  flex-direction: column;
+}
+
+.amulance-heading h1{
+  font-family: "Kaushan Script";
+  color: #00069B;
+  font-size:56px;
+  margin-left: 40px;
+}
+.amulance-heading p{
+  font-size:18px;
+  font-style: italic;
+  margin-left: 40px;
+}
+.amulance-heading h2{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 40px;
+
+}
+
+.servicelogo{
+  width:69.7%;
+  height:30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.greenblue-line{
+  width:100%;
+ height: 9%;
+ display: flex;
+ flex-direction:column;
+justify-content: space-between;
+margin-top: 1%;
+}
+.greenblue-line DIV{
+  width:100%;
+  height: 41%;
+  background-color: #008ff8;
+}
+#green-line{
+  background-color: #8dc641;
+}
+
+#greenblue-block{
+  margin-left: 81.3%;
+}
+
+@media (min-width: 1370px) and (max-width: 1630px) {
+  .ambulance-sub{
+    width: 1550px;
+  }
+  .ambulance-img{
+    width: 20%;
+  }
+  .amulance-heading h1{
+    font-family: "Kaushan Script";
+    font-size:50px;
+    margin-left: 230px;
+  }
+  .amulance-heading p{
+    font-size:16px;
+    margin-left: 230px;
+  }
+  .amulance-heading h2{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    margin-left: 230px;
+  
+  }
+  .servicelogo{
+    width:90%;
+    height:30%;
+    display: flex;
+  
+  }
+  .greenblue-line{
+    width:100%;
+   height: 9%;
+   display: flex;
+   flex-direction:column;
+  justify-content: space-between;
+  margin-top: 1%;
+  margin-left: 9%;
+  }
+  #greenblue-block{
+  margin-left: 88.3%;
+  
+}
+
+}
+
+
+
+@media (min-width: 1100px) and (max-width: 1370px) {
+  .ambulance-sub{
+    width: 1400px;
+  }
+  .ambulance-img{
+    width: 15%;
+  }
+  .amulance-heading h1{
+    font-family: "Kaushan Script";
+    font-size:48px;
+    margin-left: 320px;
+  }
+  .amulance-heading p{
+    font-size:16px;
+    margin-left: 320px;
+  }
+  .amulance-heading h2{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    margin-left: 320px;
+  
+  }
+  .servicelogo{
+    width:98%;
+    height:30%;
+    display: flex;
+  
+  }
+  .greenblue-line{
+    width:100%;
+   height: 9%;
+   display: flex;
+   flex-direction:column;
+  justify-content: space-between;
+  margin-top: 1%;
+  margin-left: 30%;
+  }
+  #greenblue-block{
+  margin-left: 93.3%;
+}
+}
+
+
+
+@media (min-width: 2200px) and (max-width: 3260px) {
+  .ambulance-sub{
+    width: 1780px;
+    height: 100%;
+    margin-right: 580px;
+  }
+}
+   
+    /* footer */
+
+.footer-main{
+  width: 100%;
+  height: 400px;
+  background-color: #002947;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-sub{
+  width:1435px;
+  height: 60%;
+
+  margin-top:68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.log{
+  width: 33.2%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.log p{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-menu{
+  width:40.4%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.quick-links{
+  width: 21.3%;
+  height: 100%;
+
+}
+.log img{
+  width: 45%;
+
+}
+
+#instagram-main{
+height:20%;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.instagram{
+  width: 42%;
+  height: 100%;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.instagram button{
+  border: none;
+  background-color:#002947;
+}
+
+.footer-ContactUs {
+  width: 29.8%;
+  height: 100%;
+  border: 1px solid #008ff8;
+  background-color: #008ff8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+  
+}
+
+.footer-ContactUs a{
+  color: white;
+  font-weight:500;
+  font-size: 22px;
+}
+
+.footer-ContactUs:hover{
+  background-color: white;
+}
+
+.footer-ContactUs:hover a{
+  color:#008ff8;
+}
+
+.footer-menu LI{
+  line-height:40px;
+  font-size: 18px;
+  font-weight: 500;
+  color:white;
+}
+
+#footer-li{
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  color: white;
+
+}
+
+.footer-svg{
+  font-weight: 500;
+  display: none;
+}
+  
+.footer-menu li:hover{
+  color: #008ff8;
+}
+
+.footer-menu li:hover .footer-svg{
+  display: inline;
+}
+
+.footer-menu a{
+  color: white;
+}
+
+.footer-menu li:hover a{
+  color: #008ff8;
+}
+
+.footer-menu ul{
+  width:100%;
+}
+
+.quick-links p{
+  font-size:18px;
+  font-weight: 500;
+  color: white;
+  height: 50px;
+  padding-left:40px;
+}
+
+
+.quick-links svg{
+  display:inline-block;
+  float:left;
+}
+
+.quick-links input{
+  width: 229px;
+  height: 46px;
+  margin-top: 91px;
+  border-radius: 6px 0px 0px 6px ;
+  font-size: 18px;
+  padding-left: 20px;
+  border: none;
+}
+
+.btn-search2{
+  width: 76px;
+  height:46px;
+  background-color: #008ff8;
+  display: inline-block;
+  float: right;
+  margin-top: 91px;
+  border-radius: 0px 6px 6px 0px ;
+
+  border-style: none;
+}
+
+.btn-search2 svg{
+  width: 100%;
+}
+
+@media (min-width: 1000px) and (max-width: 1470px) {
+  .footer-sub{
+    width:1250px;
+    height: 60%;
+    margin-top:68px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-search2{
+    width: 66px;
+    height:46px;
+    background-color: #008ff8;
+    display: inline-block;
+    float: right;
+    margin-top: 110px;
+    border-radius: 0px 6px 6px 0px ;
+    
+  }
+  .quick-links input{
+    width: 200px;
+    height: 46px;
+    margin-top: 110px;
+    border-radius: 6px 0px 0px 6px ;
+  
+    font-size: 18px;
+    padding-left: 20px;
+  }
+  .footer-ContactUs a{
+    color: white;
+    font-weight:500;
+    font-size: 18px;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
