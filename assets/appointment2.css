@@ -1,319 +1,530 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+
+}
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+button {
+  border: none;
+  background-color: white;
+}
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 1px 3px 8px #0091f871;
+}
+.homesection {
+  width: 100%;
+  background-color: #008ff8;
+  height: 45px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.nav-add {
+  width: 1435px;
+  display: flex;
+}
+.nav-address {
+  display: flex;
+  justify-items: center;
+  height: 45px;
+  width: 58%;
+  justify-content: space-between;
+}
+.mail {
+  display: flex;
+
+  width: 42%;
+}
+
+.name {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mail-subcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+
+.mail-subcontainer2 {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.mail-id {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.mail-id a {
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 109px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.navbar-container {
+  width: 1435px;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.logo {
+  width: 27%;
+  padding-top: 14px;
+}
+.menu {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+}
+
+.sub-menu {
+  display: flex;
+  width: 100%;
+  height: 20px;
+}
+
+.menu-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+
+.menu-list li a {
+  color: #008ff8;
+  font-size: 18px;
+}
+
+.menu-list li #href:hover {
+  color: #8dc641;
+  stroke: #8dc641;
+}
+
+.about-hospital {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+
+
+.abouthospital-dropdownmeu:hover .about-hospital a{
+  color: #8dc641;
+}
+
+.abouthospital-dropdownmeu:hover .about-hospital {
+  color: #8dc641;
+  stroke: #8dc641;
+}
+
+.dropdpwnmenu {
+  background-color: white;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  color: #008ff8;
+  position: absolute;
+  box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  display: none;
+}
+
+.li-bg {
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  border-radius: 10%;
+  gap: 3px;
+  width: 98%;
+}
+
+.abouthospital-dropdownmeu:hover .dropdpwnmenu {
+  display: flex;
+}
+
+#column1 li {
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 95%;
+  padding-left: 12px;
+  border-radius: 10px;
+}
+#Management:hover {
+  background-color: #008ff8;
+  color: white;
+}
+
+#Certifications:hover {
+  background-color: #008ff8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#Management:hover a {
+  color: #ffffff;
+}
+
+#Certifications:hover a {
+  color: #ffffff;
+}
+.dropdpwnmenu2 {
+  background-color: white;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  color: #008ff8;
+  position: absolute;
+  z-index: 998;
+  box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  display: none;
+}
+
+.abouthospital-dropdownmeu:hover .dropdpwnmenu2 {
+  display: flex;
+}
+
+.Appointment-main {
+  width: 19%;
+  display: flex;
+  justify-content: end;
+}
+
+.Appointment {
+  display: flex;
+
+  width: 85%;
+  height: 100%;
+  justify-content: end;
+}
+.Appointment-sub {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Appointment-logo {
+  width: 55%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #008ff8;
+  color: white;
+  border-radius: 10%;
+}
+.Appointment-logo a {
+  color: #008ff8;
+}
+.Appointment-logo:hover a {
+  color: white;
+}
+
+
+.search-container {
+  position: relative;
+  width: 40px;
+}
+
+.search-btn {
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.search-btn:focus {
+  outline: none;
+}
+
+.search-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  border: 2px solid #007bff;
+  border-radius: 50px;
+  outline: none;
+  font-size: 16px;
+  background-color: white;
+  color: #333;
+  transition: width 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.search-input:focus {
+  width: 250px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-container.active .search-input {
+  width: 400px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#profileBtn {
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(255, 255, 255, 0.4); 
+    padding-top: 90px; 
+    border: none;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    border: 1px solid #88888880;
+    width: 535px;
+    height: 571px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Close Button */
+.close {
+    color:rgb(129, 129, 129);
+    float: right;
+    font-size: 35px;
   
+    width: 50px;
+    height: 24px;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the login form */
+.login-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container img.logo {
+    width: 214px;
+    height: 68px;
+
+    align-self: center;
+}
+
+.login-container h2 {
+    margin-top: 44px;
+    font-size:32px;
+    text-align: center;
+    line-height: 8px;
+}
+
+.login-container p{
+  font-size:18px;
+  font-weight: 400;
+
+}
+
+
+
+
+.login-container input[type="email"], 
+.login-container input[type="password"] {
+    width: 424px;
+    height: 45px;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 0.75px solid #171717;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+}
+
+.login-container input[type="email"]{
+  margin-top: 35px;
+  }
+  
+
+.login-container .remember-me {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    justify-content: space-between;
+    padding-left: 55px;
+    padding-right: 55px;
+    font-size: 12px;
+}
+
+.login-container .remember-me input[type="checkbox"] {
+  margin-right: 5px; /* Move the checkbox to the right */
+  transform: scale(1.2); 
+}
+
+.login-btn {
+    width: 424px;
+    height: 45px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#donthave-acc{
+  font-size:12px;
+  font-weight: 400;
+}
+
+.forgot-password{
+  color: #008FF8;
+  font-size: 12px;
+}
+
+.login-btn:hover {
+    background-color:#8dc641;
+}
+
+.login-container .forgot-password {
+    display: block;
+  
+}
+
+.login-container p {
+    margin-top: 20px;
+}
+
+#donthave-acc a{
+  color: #008FF8;
+}
+
+
+.Appointment-logo:hover {
+  background-color: #008ff8;
+}
+
+.Appointment-avg:hover {
+  stroke: #8dc641;
+}
+
+@media (min-width: 1340px) and (max-width: 1470px) {
+  .nav-address {
+    width: 80%;
+  }
+
+  .mail-subcontainer2 {
+    width: 60%;
+  }
+  .nav-add {
+    width: 1250px;
+  }
+
+  .navbar-container {
+    width: 1250px;
+  }
+}
+
+@media (min-width: 1229px) and (max-width: 1340px) {
+
+  .nav-add {
+    width: 1100px;
+  }
+  .navbar-container {
+    width: 1000px;
+
+  }
+
+}
+
+@media (min-width: 1000px) and (max-width: 1229px) {
+
+  .nav-add {
+    width: 1000px;
+  }
+  .navbar-container {
+    width: 1000px;
+    
   }
   html,body{
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-  
+    
   }
-  button {
-    border: none;
-    background-color: white;
-  }
-  .header {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    box-shadow: 1px 3px 8px #0091f871;
-  }
-  .homesection {
-    width: 100%;
-    background-color: #008ff8;
-    height: 45px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-  }
-  
-  .nav-add {
-    width: 1435px;
-    display: flex;
-  }
-  .nav-address {
-    display: flex;
-    justify-items: center;
-    height: 45px;
-    width: 58%;
-    justify-content: space-between;
-  }
-  .mail {
-    display: flex;
-  
-    width: 42%;
-  }
-  
-  .name {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .mail-subcontainer {
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    align-items: center;
-  }
-  
-  .mail-subcontainer2 {
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-  }
-  
-  .mail-id {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
-  }
-  .mail-id a {
-    color: white;
-  }
-  
-  .navbar {
-    width: 100%;
-    height: 109px;
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-  }
-  
-  .navbar-container {
-    width: 1435px;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-  }
-  
-  .logo {
-    width: 27%;
-    padding-top: 14px;
-  }
-  .menu {
-    width: 60%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    font-weight: bold;
-  }
-  
-  .sub-menu {
-    display: flex;
-    width: 100%;
-    height: 20px;
-  }
-  
-  .menu-list {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-  }
-  
-  
-  .menu-list li a {
-    color: #008ff8;
-    font-size: 18px;
-  }
-  
-  .menu-list li #href:hover {
-    color: #8dc641;
-    stroke: #8dc641;
-  }
-  
-  .about-hospital {
-    display: flex;
-    font-weight: bold;
-    align-items: center;
-  }
-  
-  
-  .abouthospital-dropdownmeu:hover .about-hospital a{
-    color: #8dc641;
-  }
-  
-  .abouthospital-dropdownmeu:hover .about-hospital {
-    color: #8dc641;
-    stroke: #8dc641;
-  }
-  
-  .dropdpwnmenu {
-    background-color: white;
-    height: 130px;
-    display: flex;
-    flex-direction: column;
-    width: 190px;
-    color: #008ff8;
-    position: absolute;
-    box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.178);
-    border-radius: 10px;
-    display: none;
-  }
-  
-  .li-bg {
-    height: 100%;
-    background-color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: end;
-    border-radius: 10%;
-    gap: 3px;
-    width: 98%;
-  }
-  
-  .abouthospital-dropdownmeu:hover .dropdpwnmenu {
-    display: flex;
-  }
-  
-  #column1 li {
-    height: 80%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 95%;
-    padding-left: 12px;
-    border-radius: 10px;
-  }
-  #Management:hover {
-    background-color: #008ff8;
-    color: white;
-  }
-  
-  #Certifications:hover {
-    background-color: #008ff8;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  #Management:hover a {
-    color: #ffffff;
-  }
-  
-  #Certifications:hover a {
-    color: #ffffff;
-  }
-  .dropdpwnmenu2 {
-    background-color: white;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    width: 190px;
-    color: #008ff8;
-    position: absolute;
-    z-index: 998;
-    box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.178);
-    border-radius: 10px;
-    display: none;
-  }
-  
-  .abouthospital-dropdownmeu:hover .dropdpwnmenu2 {
-    display: flex;
-  }
-  
-  .Appointment-main {
-    width: 19%;
-    display: flex;
-    justify-content: end;
-  }
-  
-  .Appointment {
-    display: flex;
-  
-    width: 85%;
-    height: 100%;
-    justify-content: end;
-  }
-  .Appointment-sub {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .Appointment-logo {
-    width: 55%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #008ff8;
-    color: white;
-    border-radius: 10%;
-  }
-  .Appointment-logo a {
-    color: #008ff8;
-  }
-  .Appointment-logo:hover a {
-    color: white;
-  }
-  .Appointment-logo:hover {
-    background-color: #008ff8;
-  }
-  
-  .Appointment-avg:hover {
-    stroke: #8dc641;
-  }
-  
-  @media (min-width: 1340px) and (max-width: 1470px) {
-    .nav-address {
-      width: 80%;
-    }
-  
-    .mail-subcontainer2 {
-      width: 60%;
-    }
-    .nav-add {
-      width: 1250px;
-    }
-  
-    .navbar-container {
-      width: 1250px;
-    }
-  }
-  
-  @media (min-width: 1229px) and (max-width: 1340px) {
-  
-    .nav-add {
-      width: 1100px;
-    }
-    .navbar-container {
-      width: 1000px;
-  
-    }
-  
-  }
-  
-  @media (min-width: 1000px) and (max-width: 1229px) {
-  
-    .nav-add {
-      width: 1000px;
-    }
-    .navbar-container {
-      width: 1000px;
-      
-    }
-    html,body{
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      
-    }
-  
-  }
+
+}
   
   .bookappoitnment-main{
       width: 100%;
@@ -405,7 +616,11 @@
     
   }
 
-
+  input::placeholder
+  textarea::placeholder {
+      padding-left: 20px;
+      font-size: 18px;
+  }
 
   .form-row{
     height: 7.3%; ;
@@ -417,14 +632,14 @@
   .form-row #phone-no{
     height: 100%; 
     border-radius: 8px;
-    width: 48%;
+    width: 43.4%;
     border: none;
   }
 
   #email{
     height: 100%; 
     border-radius: 8px;
-    width: 48%;
+    width: 43.4%;
     border: none;
   }
 
@@ -463,9 +678,17 @@ input[type="time"] {
 
 input::placeholder, 
 textarea::placeholder {
-    padding-left: 20px;
+    padding-left: 10px;
     font-size: 18px;
     padding-top: 20px;
+    caret-color: black;
+}
+
+input[type="text"],
+input[type="email"]
+ {
+  padding-left: 20px; /* Adjust padding as needed */
+  font-size: 18px;
 }
 
 .hero-ContactUs {
